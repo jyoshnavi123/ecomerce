@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My E-commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            Cart <span id="cart-count" class="badge bg-light text-dark">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scrolling Banner (Carousel) -->
+    <section class="container mt-4">
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/banner4.jpg" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner5.jpg" class="d-block w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banner1.jpg" class="d-block w-100" alt="Banner 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container mt-4">
+        <h2 class="text-center">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/31KxpX7Xk7L._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Smartphone">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone</h5>
+                        <p class="card-text">₹19,999</p>
+                        <button class="btn btn-success add-to-cart" data-name="Smartphone" data-price="19999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/31j5zmbapBL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Wireless Earbuds">
+                    <div class="card-body">
+                        <h5 class="card-title">Wireless Earbuds</h5>
+                        <p class="card-text">₹3,499</p>
+                        <button class="btn btn-success add-to-cart" data-name="Wireless Earbuds" data-price="3499">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41CXuV+fydL._SY300_SX300_.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop</h5>
+                        <p class="card-text">₹49,999</p>
+                        <button class="btn btn-success add-to-cart" data-name="Laptop" data-price="49999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals (Scrolling) -->
+    <section class="container mt-4">
+        <h2 class="text-center">New Arrivals</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <marquee behavior="scroll" direction="left">
+                    <img src="https://m.media-amazon.com/images/I/71jF7678loL._SX679_.jpg" alt="New Product 1">
+                    <img src="https://m.media-amazon.com/images/I/71gcnez5YsL._SY879_.jpg" alt="New Product 2">
+                    <img src="https://m.media-amazon.com/images/I/41JuL86XaOL._SX300_SY300_QL70_FMwebp_.jpg" alt="New Product 3">
+                    <img src="https://m.media-amazon.com/images/I/51pipGoHHFL._SX300_SY300_QL70_FMwebp_.jpg" alt="New Product 4">
+                    <img src="https://m.media-amazon.com/images/I/41GtRg1R+LL._SY300_SX300_.jpg" alt="New Product 5">
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Deals & Discounts -->
+    <!-- Top Deals & Discounts -->
+<section class="container mt-4">
+    <h2 class="text-center">Top Deals & Discounts</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/51JH5OhIx2L._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Discount Laptop">
+                <div class="card-body">
+                    <h5 class="card-title">Gaming Laptop</h5>
+                    <p class="card-text"><del>₹69,999</del> <strong>₹59,999</strong></p>
+                    <button class="btn btn-success add-to-cart" data-name="Gaming Laptop" data-price="59999">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/61PBOgIkzDL._SX679_.jpg" class="card-img-top" alt="Discount Smartwatch">
+                <div class="card-body">
+                    <h5 class="card-title">Smartwatch</h5>
+                    <p class="card-text"><del>₹5,999</del> <strong>₹4,499</strong></p>
+                    <button class="btn btn-success add-to-cart" data-name="Smartwatch" data-price="4499">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/31aUPDamLKL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Discount Earbuds">
+                <div class="card-body">
+                    <h5 class="card-title">Wireless Earbuds</h5>
+                    <p class="card-text"><del>₹3,999</del> <strong>₹2,999</strong></p>
+                    <button class="btn btn-success add-to-cart" data-name="Wireless Earbuds" data-price="2999">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 My E-commerce. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="#" class="text-light">Facebook</a>, 
+            <a href="#" class="text-light">Twitter</a>, 
+            <a href="#" class="text-light">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>
